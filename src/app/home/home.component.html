@@ -1,0 +1,21 @@
+<header>
+  <mat-toolbar>
+    <button mat-icon-button class="me-3"><mat-icon>menu</mat-icon></button>
+    <span>My App</span>
+    <span class="line-spacer"></span>
+    <button mat-icon-button (click)="this.loadComponent(1)"><mat-icon>looks_one</mat-icon></button>
+    <button mat-icon-button (click)="this.loadComponent(2)"><mat-icon>looks_two</mat-icon></button>
+    <button mat-icon-button (click)="this.loadComponent(3)"><mat-icon>looks_3</mat-icon></button>
+    <span class="spacer"></span>
+    <button mat-icon-button><mat-icon>favorite</mat-icon></button>
+    <button mat-icon-button><mat-icon>share</mat-icon></button>
+  </mat-toolbar>
+</header>
+<div class="p-3 h-100">
+  <ng-container #ngContainerRef>
+    Hey! click on any number icon in header to load modules dynamically.
+  </ng-container>
+</div>
+<footer class="m-0">
+  (C) 2022 - Family\\'
+</footer>

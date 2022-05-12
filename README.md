@@ -1,6 +1,7 @@
 # NgDynamic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+The aim of this project is to show an approach to load components and modules dynamically using Angular in a very simple way.
 
 ## Development server
 

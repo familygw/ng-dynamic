@@ -2,17 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }
